@@ -1,0 +1,57 @@
+/*
+ * CSS px math - http://inamidst.com/stuff/notes/csspx
+ *
+ * See: WebDev Lecture 03 - http://cs52.me/lectures/03_css/
+ */
+
+/*
+ * Here is a generally reasonable practice. 
+ * -> Body is set in absolute px, main sections are set in rem, and the contents of each section are in em. 
+ * This allows for zoom to work nicely and allows independent control the scaling of the main sections. 
+ */
+
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* Open Sans font: <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css’> */
+
+
+
+#moon {
+  width: 24.3px
+  /* 5376  * (1079 miles radius of moon /
+      238900 miles distance from earth) */
+}
+/* 1 ref px = visual angle of 1px at a density of 96dpi at 28inches */
+
+
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('myfont.woff2') format('woff2'),
+       url('myfont.woff') format('woff'),
+       url('myfont.ttf') format('truetype');
+}
+
+p {
+    font-family: "MyWebFont";
+    font-style: normal; /* italic oblique */
+    font-size: 14px;
+    font-weight: bold; /* normal light */
+    font-variant: small-caps;
+}
+
+
+
+div {
+  transition-property: [property]
+  transition-duration: [duration];
+  transition-timing-function: [timing-function];
+  transition-delay: [delay];
+}
+/* or shorthand */
+div {
+  transition: [property] [duration] [timing-function] [delay];
+}
