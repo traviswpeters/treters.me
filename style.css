@@ -51,6 +51,9 @@
 
 /* CONTENT ***********************************/
 .content {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
     grid-column: 1 / -1;
 
     display: flex;
