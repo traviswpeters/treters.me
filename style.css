@@ -186,7 +186,7 @@ body {
       */
     /* background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/gradient-bg.jpg) no-repeat center center fixed; */
     /* background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), url(https://hdwallsource.com/img/2014/6/shapes-wallpaper-25059-25742-hd-wallpapers.jpg) no-repeat center center fixed; */
-    background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), url(https://hdwallsource.com/img/2014/6/shapes-wallpaper-25059-25742-hd-wallpapers.jpg) no-repeat center center fixed;
+    background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), url(img/shapes-bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
