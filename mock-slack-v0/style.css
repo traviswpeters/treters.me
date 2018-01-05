@@ -1,0 +1,224 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    text-align: center;
+
+    /*
+      Apply a gradient over the top of an image (in this case, specified by a URL)
+      partial credit: https://css-tricks.com/perfect-full-page-background-image/
+      */
+    background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/gradient-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.site {  /* Enables a "sticky footer" - https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+body > * {
+    padding: 10px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav > ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Sanchez', serif;
+    font-size: 48px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    background-color: #3f46ad;
+}
+
+#site-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*
+ * --------------------  Header  --------------------
+ */
+
+.header-container {
+   display: flex; /* or inline-flex */
+   padding-bottom: 10px;
+}
+.header-container > div {
+    padding: 5px;
+    margin: 5px;
+}
+.header-container div:first-child {
+    margin-right: auto;
+}
+.header-container div:last-child {
+    padding-right: 50px;
+}
+
+a.button {
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: .95rem;
+    padding: .5rem 1rem;
+}
+
+/*
+ * --------------------  Main  --------------------
+ */
+
+.site-content {
+   flex: 1;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* padding: 0 1rem; */
+    padding: 1px 35px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+/* Form */
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.email {
+    display: inline-block;
+    padding: .5rem;
+    vertical-align: middle;
+    width: 60%;
+    /* max-width: 60%; */
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    font-size: .95rem;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding: .5rem 1rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: 1;
+    margin: .25rem 0;
+    border-radius: 5px;
+}
+
+.signInText {
+    font-size: .65rem;
+}
+.signInText a {
+    font-size: .65rem;
+    text-decoration: underline;
+}
+
+/*
+ * --------------------  Footer  --------------------
+ */
+
+/*
+ * Footer Menu
+ */
+
+.footer-menu-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.footer-menu-block {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.footer-menu-block p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+}
+.footer-menu-block-item {
+    flex: 1 100%;
+}
+.footer-menu-block ul li {
+    padding: 0px;
+    margin: -5px;
+}
+.footer-menu-block-item a {
+    font-size: 8px;
+}
+
+/*
+ * Footer Contact
+ */
+
+.footer-contact-container {
+    padding: 10px;
+    margin: 15px;
+}
+
+.footer-contact-container > p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-contact-block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-contact-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*
+ * Resizing w/ Media Query
+ */
+
+@media only screen and (max-width: 640px) {
+    .header-item {
+        display: none;
+    }
+    .footer-menu-container {
+        flex-direction: column;
+    }
+    .footer-menu-block-items {
+        display: none;
+    }
+}

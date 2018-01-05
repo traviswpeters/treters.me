@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>>_mock-slack</title>
+        <title>treter-dee</title>
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sanchez" rel="stylesheet">
         <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -10,33 +10,31 @@
 
     <body class="site">
 
-        <div class="grid-page">
+            <header class="header-container">
+                <div id="header-item-title" class="header-item-title"><a href="#"><span id="site-title">>_mock-slack</span></a></div>
+                <div class="header-item"><a href="#">Why Slack?</a></div>
+                <div class="header-item"><a href="#">Pricing</a></div>
+                <div class="header-item"><a href="#">About Us</a></div>
+                <div class="header-item"><a href="#">Find Your Workspace</a></div>
+                <div id="header-item-button" class="header-item-button"><a class="button" href="#">Sign In</a></div>
+            </header>
 
-            <div class="header">
-                <div class="header-item"><a href="#slack">>_mock-slack</a></div>
-                <div class="header-item header-full"><a href="#whyslack">Why Slack?</a></div>
-                <div class="header-item header-full"><a href="#pricing">Pricing</a></div>
-                <div class="header-item header-full"><a href="#aboutus">About Us</a></div>
-                <div class="header-item"><a href="#signin">Sign In</a></div>
-            </div>
-
-            <div class="content">
+            <div class="content-container site-content">
                 <h1>Where Work Happens</h1>
                 <p>
                 When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract,
                 finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.
                 </p>
-                <div class="form-container">
+                <div>
                     <form class="form">
-                        <input type="email" name="email" placeholder="Email address" class="input email"></input>
-                        <input type="submit" class="submit uppercase" value="Get Started"></input>
+                        <input type="email" name="email" placeholder="Email address" class="email"></input>
+                        <button type="submit" class="btn uppercase">Get Started</button>
                     </form>
-                    <p class="signInText">Already using Slack? <a href="#">Sign in</a>.</p>
                 </div>
-
+                <p class="signInText">Already using Slack? <a href="#">Sign in</a>.</p>
             </div>
 
-            <div class="footer">
+            <footer class="footer">
 
                 <div class="footer-menu-container">
                     <nav class="footer-menu-block">
@@ -63,11 +61,13 @@
                         <p>Resources</p>
                         <ul class="footer-menu-block-items">
                             <li class="footer-menu-block-item"><a href="#">Download</a></li>
+                            <li class="footer-menu-block-item"><a href="#">Help Center</a></li>
                             <li class="footer-menu-block-item"><a href="#">Guides</a></li>
                             <li class="footer-menu-block-item"><a href="#">Partners</a></li>
                             <li class="footer-menu-block-item"><a href="#">Events</a></li>
                             <li class="footer-menu-block-item"><a href="#">App Directory</a></li>
                             <li class="footer-menu-block-item"><a href="#">API</a></li>
+                            <li class="footer-menu-block-item"><a href="#">Gartner Report</a></li>
                         </ul>
                     </nav>
                     <nav class="footer-menu-block">
@@ -82,14 +82,16 @@
                 </div>
 
                 <div class="footer-contact-container">
-                    <div class="footer-contact-item"><a href="#"><i class="fa fa-envelope fa-lg"></i></a></div>
-                    <div class="footer-contact-item"><a href="#"><i class="fa fa-facebook fa-lg"></i></a></div>
-                    <div class="footer-contact-item"><a href="#"><i class="fa fa-camera-retro fa-lg"></i></a></div>
-                    <div class="footer-contact-item"><a href="#"><i class="fa fa-twitter fa-lg"></i></a></div>
+                    <p>Contact</p>
+                    <div class="footer-contact-block">
+                        <div class="footer-contact-item"><a href="#"><i class="fa fa-envelope fa-lg"></i></a></div>
+                        <div class="footer-contact-item"><a href="#"><i class="fa fa-facebook fa-lg"></i></a></div>
+                        <div class="footer-contact-item"><a href="#"><i class="fa fa-camera-retro fa-lg"></i></a></div>
+                        <div class="footer-contact-item"><a href="#"><i class="fa fa-twitter fa-lg"></i></a></div>
+                    </div>
                 </div>
-            </div>
 
-        </div>
+            </footer>
 
     </body>
 </html>
