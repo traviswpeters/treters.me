@@ -1,0 +1,286 @@
+/******************************** GRID STYLING ********************************/
+
+.grid-page {
+    display: grid;
+    grid-gap: 3px;
+    height: 100%;
+
+    /* GRID COLUMNS  */
+    grid-template-columns: repeat(12, 1fr);
+
+    /* GRID ROWS */
+    /* grid-template-rows: 40px 200px 40px; */
+    /* grid-template-rows: 1fr auto 1fr; */
+    /* grid-template-rows: 1fr 1fr auto; */
+    grid-template-rows: 40px 1fr fit-content(100px);
+}
+
+/* HEADER ***********************************/
+.header {
+    grid-column: 1 / -1;
+    display: flex; /* NOTE: the header element itself (though part of a grid) makes its internal format a "flex" layout */
+    margin-top: 30px;
+}
+
+.header > div {
+    margin: 10px 20px;
+}
+
+.header > div:first-child {
+    margin-right: auto;
+}
+
+.header > div:first-child a {
+    border-bottom: 1px solid transparent;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.header > div:last-child {
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.header > div:last-child a:hover {
+    border-bottom: 1px solid transparent;
+    font-weight: bolder;
+    color: #DDDDDD;
+}
+
+/* CONTENT ***********************************/
+.content {
+    grid-column: 1 / -1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content > p {
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    /* row layout */
+}
+
+.input, .submit {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    -webkit-appearance: none;
+}
+
+.input {
+    border: 1px solid lightgray;
+    width: 400px;
+    margin-right: 3px;
+    color: gray;
+}
+
+.submit {
+    background-color: #4EBBE4;
+    border: 1px solid transparent;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.signInText {
+    font-size: .65rem;
+}
+
+.signInText a {
+    color: #4EBBE4;
+    font-size: .65rem;
+    border-bottom: 1px solid #4EBBE4;
+}
+
+.signInText a:hover {
+    border-bottom: 1px solid #4EBBE4;
+}
+
+/* FOOTER ***********************************/
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 3/4;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu-container {
+    display: flex;
+}
+
+.footer-menu-container * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Part 1 of the footer (menu) */
+.footer-menu-block {
+    text-align: left;
+    margin: 20px 40px;
+    padding: 0;
+}
+
+.footer-menu-block > p {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.footer-menu-block-item > a {
+    font-size: 10px;
+}
+
+/* Part 1 of the footer (contact) */
+.footer-contact-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.footer-contact-container > div {
+    font-size: 10px;
+    margin: 5px;
+}
+
+.footer-contact-item > a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+/********************************* BASIC CSS **********************************/
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+body {
+    text-align: center;
+
+    /*
+      Apply a gradient over the top of an image (in this case, specified by a URL)
+      partial credit: https://css-tricks.com/perfect-full-page-background-image/
+      */
+    /* background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/gradient-bg.jpg) no-repeat center center fixed; */
+    /* background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), url(https://hdwallsource.com/img/2014/6/shapes-wallpaper-25059-25742-hd-wallpapers.jpg) no-repeat center center fixed; */
+    background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), url(../img/shapes-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.grid-page > div {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+h1 {
+    font-family: 'Sanchez', serif;
+    font-size: 64px;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid white;
+}
+
+.header {
+}
+
+.content {
+    min-width: 200px;
+    max-width: 700px;
+    flex-basis: auto; /* default value */
+    flex-grow: 1;
+    justify-content: center;
+    align-content: self;
+    margin: auto;
+}
+
+.footer {
+}
+
+/****************************** MEDIA QUERY CSS *******************************/
+
+@media only screen and (max-width: 640px) {
+    .header-full {
+        display: none;
+    }
+
+    .content {
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    .content > p {
+        text-align: center;
+    }
+
+    .form {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .input {
+        text-align: center;
+    }
+
+    .input, .submit {
+        min-width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-menu-container {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .footer-menu-container > * {
+        margin: 5px;
+    }
+
+    .footer-menu-block > p {
+        text-align: center;
+    }
+
+    .footer-menu-block-items {
+        display: none;
+    }
+}
