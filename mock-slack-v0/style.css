@@ -13,7 +13,7 @@ body {
       Apply a gradient over the top of an image (in this case, specified by a URL)
       partial credit: https://css-tricks.com/perfect-full-page-background-image/
       */
-    background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/gradient-bg.jpg) no-repeat center center fixed;
+    background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), url(../img/gradient-bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
