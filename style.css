@@ -245,6 +245,7 @@ a:hover {
     }
 
     .content {
+        margin-top: 50px; 
         min-width: 90%;
         max-width: 90%;
     }
