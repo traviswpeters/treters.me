@@ -1,0 +1,6 @@
+#
+# Use light-server for live reloads in the browser! https://github.com/txchen/light-server
+#
+
+# serve the mock medium article layout (CSS Grid demo) and watch the CSS files for changes
+./node_modules/.bin/light-server -s medium-article-grid-layout -o -w medium-article-grid-layout/*.css # # reloadcss

@@ -1,0 +1,23 @@
+{
+  "name": "treters.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traviswp/treters.me.git"
+  },
+  "keywords": [],
+  "author": "travis <traviswp@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/traviswp/treters.me/issues"
+  },
+  "homepage": "https://github.com/traviswp/treters.me#readme",
+  "dependencies": {
+    "light-server": "^2.2.1"
+  }
+}
