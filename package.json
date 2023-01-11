@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/traviswp/treters.me#readme",
   "dependencies": {
-    "light-server": "^2.2.1"
+    "light-server": "^2.9.1"
   }
 }
